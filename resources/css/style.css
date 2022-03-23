@@ -1,5 +1,7 @@
 @import url(normalize.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
 
 /* -------------------- VARIABLES */ 
 
@@ -10,8 +12,11 @@
 }
 
 body {
-    background-color: red;
+    background-color: #f1f1f1;
     font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    line-height: 1.5;
+    font-size: 20px;
 }
 
 img {
@@ -22,10 +27,50 @@ img {
 
 /* -------------------- HEADINGS AND TYPE */ 
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Hurricane', cursive;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+@media screen and (min-width: 800px) {
+
+
+    h1 {
+        font-size: 80px;
+    }
+    
+    h2 {
+        font-size: 60px;
+    }
+    
+    h3 {
+        font-size: 48px;
+    }
+
+
+}
+
+
+
 /* -------------------- LAYOUTS */ 
 
 .layout-wide {
-    background-color: green;
+    
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -33,10 +78,7 @@ img {
 
 /* -------------------- HEADER */ 
 
-h2 {
-    color: white;
-    background-color: blue;
-}
+
 /* -------------------- NAVIGATION */ 
 
 /* -------------------- FOOTER */ 
@@ -49,11 +91,17 @@ h2 {
     display: grid;
 }
 
-@media screen and (min-width: 600px) {
+.text-module {
+    padding: 5%;
+}
+
+@media screen and (min-width: 800px) {
 
     .content-item {
         grid-template-columns: 1fr 1fr;
     }
 
-
+    .text-module {
+        padding: 3%;
+    }
 }
