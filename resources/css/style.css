@@ -23,6 +23,16 @@ img {
     max-width: 100%;
 }
 
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: yellow;
+}
+
 
 
 /* -------------------- HEADINGS AND TYPE */ 
@@ -95,13 +105,36 @@ h3 {
     padding: 5%;
 }
 
+
 @media screen and (min-width: 800px) {
 
     .content-item {
         grid-template-columns: 1fr 1fr;
     }
 
+    .content-item-thirds {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .text-module {
         padding: 3%;
     }
+}
+
+
+/* hero section */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero .layout-wide {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
 }
