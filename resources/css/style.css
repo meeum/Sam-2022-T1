@@ -119,6 +119,9 @@ header {
 
 /* -------------------- FOOTER */ 
 
+footer {
+    text-align: center;
+}
 /* -------------------- MODULES */
 
 /* main 2 col thing*/
