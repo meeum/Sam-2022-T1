@@ -131,6 +131,12 @@ header {
 .main-nav {
     list-style: none;
     padding-left: 0;
+
+    display: none;
+}
+
+.main-nav.open {
+    display: block;
 }
 
 .main-nav a {
