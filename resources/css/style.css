@@ -117,6 +117,50 @@ header {
 
 /* -------------------- NAVIGATION */ 
 
+.nav-prompt {
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .nav-prompt {
+        display: none;
+    }
+}
+
+.main-nav {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-nav a {
+    padding-top:10px;
+    padding-bottom: 10px;
+    display: block;
+    border-bottom: 1px solid black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+@media screen and (min-width: 800px) {
+
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main-nav a {
+            border: none;
+        }
+}
+
+
+
 /* -------------------- FOOTER */ 
 
 footer {
